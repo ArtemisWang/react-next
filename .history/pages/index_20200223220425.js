@@ -51,9 +51,6 @@ const Home=()=>{
       <div>
         <button onClick={gotoXiaojiejie}>选择井空</button>
       </div>
-      <div>
-        <Link href="#artemis"><a>选art</a></Link>
-      </div>
       
     </>
   )

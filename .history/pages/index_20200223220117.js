@@ -21,15 +21,6 @@ const Home=()=>{
   Router.events.on('beforeHistoryChange',(...args)=>{
     console.log('3.beforeHistoryChange->路由变化结束，参数为：',...args)
   })
-  Router.events.on('routeChangeError',(...args)=>{
-    console.log('4.routeChangeError->路由发生错误，参数为：',...args)
-  })
-  Router.events.on('hashChangeStart',(...args)=>{
-    console.log('5.hashChangeStart->哈希开始改变，参数为：',...args)
-  })
-  Router.events.on('hashChangeComplete',(...args)=>{
-    console.log('6.hashChangeComplete->哈希改变完成，参数为：',...args)
-  })
 
   function gotoXiaojiejie(){
     Router.push({
@@ -50,9 +41,6 @@ const Home=()=>{
       </div>
       <div>
         <button onClick={gotoXiaojiejie}>选择井空</button>
-      </div>
-      <div>
-        <Link href="#artemis"><a>选art</a></Link>
       </div>
       
     </>
